@@ -224,27 +224,185 @@ The dictionary text remains the property of the Hungarian Research Centre for Li
 
 ## Repository structure
 
-- `helpers/`: all Python modules, covering PDF-to-text conversion, entry segmentation, etymology
-  parsing (`etymology_parser.py`, 3,300 lines of structured parsing of natural-language etymology
-  descriptions), feature enrichment, and classification.
+Three notebooks drive the work, and `run_pipeline.py` executes them in order.
+
 - `uesz_extract/01_pdf_to_txt_to_json_to_csv.ipynb`: extraction and enrichment pipeline.
 - `emmorph_audit/02_emmorph_test.ipynb`: audit of emMorph's ability to recover dictionary base
   lemmas from derivational forms.
 - `classification/03_log_reg_classification.ipynb`: all classification experiments, ablations
   and error analyses.
-- `run_pipeline.py`: executes the three notebooks in order, and run copies land in `pipeline_runs/`.
 - `docs/figures/`: selected aggregate figures from the thesis.
+
+All real work lives in `helpers/` as importable modules, so the notebooks stay thin.
+
+**From PDF to structured entries**
+
+- `pdf_to_txt.py`: converts the original PDFs into marked text files.
+- `process_uesz_txt_files.py`: splits marked text into dictionary entries and writes structured JSON.
+- `block_extraction.py`, `head_extraction.py`, `entry_builder.py`, `entry_predicates.py`: article
+  segmentation, headline parsing and the rules that decide what counts as an entry or subentry.
+- `regexes.py`, `normalization.py`, `summary_normalization.py`, `ueszweb_abbreviations.py`:
+  character normalisation, abbreviation expansion and the shared pattern library.
+
+**Etymology parsing**
+
+- `etymology_parser.py`: 3,300 lines that turn natural-language etymology descriptions into
+  structured fields for origin, donor family, formation type and derivational base.
+- `etymology_filters.py`, `etymology_analysis_tables.py`: filtering and aggregate tables over the
+  parsed etymologies.
+- `export_etymology_csv.py`: exports the structured JSON entries into a CSV table.
+
+**Feature enrichment**
+
+- `ipa_enrichment.py`: IPA transcription through `phonemizer`.
+- `emmorph_pos.py`: part-of-speech tagging through emMorph and HFST.
+- `semantic_features.py`: approximate semantic labels from OdeNet and Princeton WordNet.
+- `suffix_variants.py`: suffix handling used by the morphological steps.
+- `append_wiktionary_english_loans.py`: merges the Wiktionary-derived English loan list.
+
+**Modelling**
+
+- `phonology.py`: builds the phonological representation, including phoneme n-grams and
+  vowel-pattern features, and applies the filters that decide which lemmas enter the binary dataset.
+- `classification.py`: trains and evaluates the binary and multinomial classifiers.
+- `emmorph_test.py`: the emMorph audit logic used by the second notebook.
+
+## Usage
+
+### 1. Install the Python dependencies
+
+```bash
+conda create -n uesz python=3.10
+conda activate uesz
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+Or with a virtual environment, if Python 3.10 is already installed:
+
+```bash
+python3.10 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+### 2. Check the external tools
+
+```bash
+hfst-lookup --version
+espeak-ng --version
+```
+
+On Windows, use `hfst-lookup.exe -V`. If HFST is installed but not on `PATH`, set `HFST_LOOKUP`
+as shown under External dependencies below.
+
+### 3. Add the dictionary PDFs and the transducer
+
+Place the 41 ÚESz PDFs in `uesz_extract/uesz_pdf/` and the compiled emMorph transducer at
+`input_files/hu.hfstol`. Neither is distributed with this repository.
+
+### 4. Run the pipeline
+
+```bash
+python run_pipeline.py
+```
+
+This executes the three notebooks in order, exactly as if they were run by hand. Executed copies
+land in `pipeline_runs/<timestamp>/` as run logs, and are not tracked by Git.
+
+Outputs are written to:
+
+- `uesz_extract/uesz_output/`: marked text, structured JSON and the current CSV output.
+- `input_files/`: the enriched CSV used by the classification notebook.
+- `emmorph_audit/emmorph_output/`: emMorph audit tables.
+- `classification/`: classification figures and notebook-level outputs.
+
+### Reproducing only the classification results
+
+If the enriched CSV already exists, the extraction pipeline can be skipped and
+`classification/03_log_reg_classification.ipynb` run on its own. It covers the binary experiments,
+the multinomial experiments, the feature ablations, the error analyses and the surface-form tests.
+
+Note that the etymology parser was developed further after the thesis experiments were run, so a
+fresh extraction will not reproduce the reported numbers exactly. The differences are concentrated
+in the parser-derived fields for derivational base and formation type, while IPA transcriptions,
+attestation years, definitions and semantic labels are unaffected.
 
 ## External dependencies
 
-Beyond `pip install -r requirements.txt` (tested with Python 3.10), the full pipeline needs:
+The pinned package versions were tested with Python 3.10. A much newer Python may cause packages
+such as SciPy to build from source instead of installing from pre-built wheels.
 
-- **HFST + emMorph** for Hungarian morphological analysis: install the `hfst` command-line tools
-  and obtain the compiled Hungarian transducer (`hu.hfstol`) from the
-  [emMorph project](https://github.com/nytud/emMorph); point `HFST_LOOKUP` at `hfst-lookup` if it
-  is not on `PATH`. The transducer is not redistributed here.
-- **eSpeak NG** for IPA transcription via `phonemizer`.
-- **WordNet resources** for semantic fields: `python -m wn download odenet:1.3 omw-en31:1.4`
+```bash
+pip install -r requirements.txt
+```
+
+Three further components are not installed by pip.
+
+### HFST and emMorph
+
+The POS enrichment step uses emMorph through HFST lookup. The Python wrapper is part of the helper
+code, and it calls the HFST command-line executable with `subprocess` and parses the tab-separated
+output. It does not use the Python `hfst` package.
+
+Two things are needed. The HFST lookup tool, called `hfst-lookup.exe` on Windows and `hfst-lookup`
+elsewhere, and the compiled Hungarian transducer `hu.hfstol` from the
+[emMorph project](https://github.com/nytud/emMorph). The transducer is not redistributed here, so
+obtain it separately and place it at `input_files/hu.hfstol`, which is the path the notebooks and
+`run_pipeline.py` read automatically.
+
+**Windows.** Precompiled HFST binaries are distributed through Apertium at
+<https://apertium.projectjj.com/win32/nightly/>. Download `hfst-latest.x86_64.7z`, extract it with
+7-Zip, and locate `hfst-lookup.exe` under the `bin` directory. If extraction reports errors for
+`.symlink` files, those can be skipped as long as `hfst-lookup.exe` is present. Then either add the
+`bin` directory to `PATH`, or set the variable directly:
+
+```powershell
+$env:HFST_LOOKUP = "C:\Users\<USER>\hfst\bin\hfst-lookup.exe"
+```
+
+**Debian and Ubuntu.**
+
+```bash
+sudo apt update
+sudo apt install hfst
+hfst-lookup --version
+```
+
+**macOS.**
+
+```bash
+brew install hfst
+hfst-lookup --version
+```
+
+If the tool is installed but not on `PATH`, point `HFST_LOOKUP` at it:
+
+```bash
+export HFST_LOOKUP="/path/to/hfst-lookup"
+```
+
+### eSpeak NG
+
+The IPA enrichment step uses `phonemizer` with the eSpeak NG backend, which must be available on
+the machine running the pipeline.
+
+```bash
+espeak-ng --version
+```
+
+### OdeNet and WordNet
+
+The semantic-field step uses the Python `wn` package with OdeNet and the English OMW WordNet 3.1
+resource. These are not installed by `pip install -r requirements.txt`. To reproduce the thesis
+labels, download the pinned versions:
+
+```bash
+python -m wn download odenet:1.3 omw-en31:1.4
+```
+
+The emMorph analyzer is documented at <https://e-magyar.hu/en/textmodules/emmorph>, and its source
+repository is at <https://github.com/nytud/emMorph>.
 
 ## License
 
