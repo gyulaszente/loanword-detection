@@ -126,9 +126,17 @@ classifier is strongest exactly where phonology and class distribution agree.
 | Turkic | 0.56 ±0.07 (n=81) |
 | Indo-Iranian | 0.54 ±0.13 (n=10) |
 
-Early and heavily integrated loans are the hardest to recover. Turkic and
-Slavic words entered Hungarian early and adapted to its phonology, which
-leaves little for an IPA-based classifier to detect.
+Turkic and Slavic loans are the hardest to recover. They entered Hungarian
+early and adapted to its phonology, which leaves little for an IPA-based
+classifier to detect.
+
+Age alone does not explain the pattern, though. Wanderwords are early too, yet
+reach 0.90. Several of them are cultural or material terms that travelled
+through a number of European languages, such as *topáz* (1208), *kristály*
+(1416) and *rubin* (1478). Words like these may have circulated in literate,
+commercial or otherwise multilingual settings, which could have preserved more
+of their donor-language shape. That is an interpretation rather than something
+the data here can demonstrate.
 
 **By first attestation period** (full model):
 
