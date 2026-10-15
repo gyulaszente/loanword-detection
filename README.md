@@ -63,6 +63,37 @@ Aggregate statistics from the extracted database:
 |---|---|
 | ![Loanword origins by attestation period](docs/figures/origin_by_period.jpeg) | ![Verb endings by origin](docs/figures/verb_endings_by_origin.jpeg) |
 
+### Why these donor groups and periods
+
+The period boundaries are historical rather than linguistic. They mark events
+that changed the political and social environment in which borrowing happened.
+
+**Up to 1300** covers the earliest written period and roughly corresponds to
+the age of the Árpád dynasty, which ended with the death of Andrew III in 1301.
+**1526** is the Battle of Mohács and the end of the medieval Kingdom of Hungary
+as a unified independent state. **1700** reflects the end of Ottoman rule over
+most of historical Hungary after the Treaty of Karlowitz in 1699, and the
+beginning of stronger Habsburg consolidation. **1867** is the Austro-Hungarian
+Compromise, which created the Dual Monarchy.
+
+The donor groups follow the same history. Indo-Iranian and Turkic contact
+predates the Hungarian settlement of the Carpathian Basin around 895 to 900.
+Slavic influence grows after the settlement, especially in vocabulary connected
+with agriculture and settled life. Latin is a special case, since it was the
+written language of church, law and administration and remained official in
+Hungary until 1844. German enters first through settlement, towns, trade and
+mining, then dominates again under Habsburg administration between 1700 and
+1867. Romance influence is tied to Italian and Latin cultural contact, and
+English borrowing is largely a twentieth-century layer.
+
+This matters for classification because older borrowings are usually more
+integrated. Early Turkic, Slavic and Indo-Iranian loans often behave like
+inherited vocabulary, which is exactly what the recall figures below show.
+
+One caveat applies throughout. The periods refer to the year of **first
+attestation in ÚESz**, not necessarily to the year a word actually entered
+Hungarian.
+
 ### Where the classifier struggles
 
 The full model was broken down by part of speech, donor family and first
