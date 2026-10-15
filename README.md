@@ -194,7 +194,8 @@ through *ÚESz - Zs*. Under **Segédletek** you will find the nine front-matter
 files, starting with *Előszó* and ending with *Bibliográfia*. Click the
 **PDF Letöltése** button on every row in both columns.
 
-Place all 41 files, **with their original filenames unchanged**, into:
+Place all 41 files, **with their original filenames unchanged**, into the
+folder below. Create it if it does not exist.
 
 ```
 uesz_extract/uesz_pdf/
