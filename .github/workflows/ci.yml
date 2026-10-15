@@ -1,0 +1,39 @@
+name: CI
+
+# When this runs: on every push, and on every pull request.
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Get the code onto the runner
+      - uses: actions/checkout@v4
+
+      # 2. Install Python
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Install the linter (no project dependencies needed for this)
+      - name: Install ruff
+        run: pip install ruff
+
+      # 4. Look for real errors only: syntax errors and undefined names.
+      #    Style issues are deliberately not checked, so the build stays
+      #    meaningful rather than noisy.
+      - name: Lint for errors
+        run: ruff check . --select E9,F821,F822
+
+      # 5. Verify every module actually compiles
+      - name: Compile all modules
+        run: python -m compileall -q helpers/ run_pipeline.py
+
+      # 6. Tests go here once you write them:
+      #    - name: Run tests
+      #      run: |
+      #        pip install pytest
+      #        pytest

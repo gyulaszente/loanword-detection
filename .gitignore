@@ -1,0 +1,70 @@
+# --- ÚESz dictionary-derived data must never be committed to the public repo ---
+json_files_gold_thesis/
+uesz_extract/uesz_pdf/
+uesz_extract/uesz_output/
+uesz_extract/extraction_audit/
+emmorph_audit/emmorph_output/
+input_files/etymology_database_gold_thesis.csv
+input_files/*.hfstol
+
+# Belt and braces: no dictionary PDFs, extracted entries or marked text,
+# wherever they end up. No .json or .pdf file belongs in this repository.
+*.pdf
+*.json
+uesz_extract/**/*.txt
+emmorph_audit/**/*.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments and local config
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+.conda/
+.pixi/
+__pypackages__/
+
+# Pipeline run logs
+pipeline_runs/
+
+# Temporary / scratch outputs
+_tmp*/
+tmp*/
+temp*/
+*.tmp
+*.temp
+*.log
+
+# SQLite temporary files
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+~$*
+
+# Local IDE metadata
+.idea/
+.vscode/

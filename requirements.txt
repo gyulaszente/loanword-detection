@@ -1,0 +1,15 @@
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.8
+seaborn==0.13.2
+PyMuPDF==1.27.2
+spacy==3.8.7
+de_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl
+phonemizer==3.3.0
+panphon==0.22.2
+wn==1.1.0
+jupyterlab==4.5.3
+ipykernel==7.1.0
+papermill==2.7.0

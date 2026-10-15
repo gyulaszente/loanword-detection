@@ -1,0 +1,380 @@
+﻿lemma,ipa,pos
+
+# Proper nouns
+# Not in ÚESz dataset
+Aberdeen,[ˈɒbɛrdiːn],Proper noun
+Arizona,[ˈɒrizonɒ],Proper noun
+Arkansas,[ˈɒrkɒnzɒs],Proper noun
+Bombay,[ˈbombeːj],Proper noun
+Chicago,[ˈt͡ʃikaːɡoː],Proper noun
+Darwin,[ˈdɒrvin],Proper noun
+Dzsenifer,[ˈd͡ʒɛnifɛr],Proper noun
+Dzsesszika,[ˈd͡ʒɛsːikɒ],Proper noun
+Georgia,[ˈd͡ʒord͡ʒɒ],Proper noun
+New York,[ˈɲuːjork],Proper noun
+Ontario,[ˈontaːrijoː],Proper noun
+Toronto,[ˈtorontoː],Proper noun
+Wales,[ˈvɛls],Proper noun
+
+# Brand names, product names, and platforms
+# Not in ÚESz dataset
+airbnb-zik,[ˈɛrbiːjɛmbiːzik],VERB
+Big Mac,[ˈbiɡmɛk],NOUN
+Gmail,[ˈɡeːmeːl]; [ˈd͡ʒiːmeːl],Proper noun
+Google,[ˈɡuːɡl̩]; [ˈɡuːɡəl],Proper noun
+Hyundai,[ˈxjundaːj],Proper noun
+iPhone,[ˈaːjfoːn],NOUN
+Linux,[ˈlinuks],Proper noun
+
+# Acronyms, abbreviations, and organizations
+# Not in ÚESz dataset
+AIDS,[ˈeːt͡sː]; [ˈeːt͡s],NOUN
+CCD,[ˈt͡seːt͡seːdeː],NOUN
+GUI,[ˈɡuji],NOUN
+OECD,[ˈoːɛt͡seːdeː],Proper noun
+PR,[ˈpiːjaːr],NOUN
+UEFA,[ˈuːɛfɒ],Proper noun
+USA,[ˈuʃɒ],Proper noun
+WHO,[ˈveːɦaːoː],Proper noun
+
+# English spelling unchanged or mostly unchanged
+# Already in ÚESz dataset
+fan,[ˈfɒn],NOUN
+farm,[ˈfɒrm],NOUN
+film,[ˈfilm],NOUN
+link,[ˈliŋk],NOUN; Adjective
+modern,[ˈmodɛrn],ADJ
+partner,[ˈpɒrtnɛr],NOUN
+sort,[ˈʃort],NOUN
+stop,[ˈʃtopː]; [ˈʃtop],Interjection; Noun
+tag,[ˈtɒɡ],NOUN
+# Not in ÚESz dataset
+agility,[ˈɒɡiliti],NOUN
+baseball,[ˈbeːzboːl],NOUN
+bitcoin,[ˈbitkojn],NOUN
+blues,[ˈbluːz],NOUN
+bokeh,[ˈbokeː]; [ˈbokɛ],NOUN
+boy,[ˈboj],NOUN
+byte,[ˈbaːjt],NOUN
+chat,[ˈt͡ʃɛt],NOUN
+chip,[ˈt͡ʃip],NOUN
+cowboy,[ˈkovboj]; [ˈkɒuboj],NOUN
+design,[ˈdizaːjn],NOUN
+fair,[ˈfɛr]; [ˈfɛːr],ADJ
+hacker,[ˈhɛkːɛr],NOUN
+house,[ˈhɒuz],NOUN
+online,[ˈonlaːjn],ADJ
+podcast,[ˈpotkɒst]; [ˈpotkɛst],NOUN
+puzzle,[ˈpaːzl̩]; [ˈpaːzəl],NOUN
+queer,[ˈkviːr],ADJ
+rap,[ˈrɛp],NOUN
+rock,[ˈrokː],NOUN
+sci-fi,[ˈskifi]; [ˈst͡sifi]; [ˈsifi],NOUN
+script,[ˈskript],NOUN
+show,[ˈʃoː],NOUN
+soul,[ˈsoːl],NOUN
+spam,[ˈspɛm],NOUN
+spin,[ˈʃpin],NOUN
+spray,[ˈspreː]; [ˈspreːj]; [ˈʃpreː]; [ˈʃpreːj],NOUN
+bootol,[ˈbuːtol],VERB
+watt,[ˈvɒtː],NOUN
+winchester,[ˈvint͡ʃɛstɛr],NOUN
+stockfotó,[ˈstokfotoː],NOUN
+sekk,[ˈʃɛkː],NOUN
+musical,[ˈmjuzikɛl],NOUN
+steampunk,[ˈstiːmpaːŋk],NOUN
+stroke,[ˈstroːk],NOUN
+web,[ˈvɛb],NOUN
+webinar,[ˈvɛbinaːr],NOUN
+western,[ˈvɛstɛrn],NOUN
+
+# International or learned vocabulary
+# Already in ÚESz dataset
+celofán,[ˈt͡sɛlofaːn],NOUN
+centrifuga,[ˈt͡sɛntrifuɡɒ],NOUN
+deltoid,[ˈdɛltojid],NOUN
+despota,[ˈdɛʃpotɒ],NOUN
+export,[ˈɛksport],NOUN
+folklorista,[ˈfolkloriʃtɒ],NOUN
+folklór,[ˈfolkloːr],NOUN
+font,[ˈfont],NOUN; Verb
+frontális,[ˈfrontaːliʃ],ADJ
+hormon,[ˈhormon],NOUN
+illusztrátor,[ˈilːustraːtor],NOUN
+import,[ˈimport],NOUN
+kalkuláció,[ˈkɒlkulaːt͡sijoː],NOUN
+kontinentális,[ˈkontinɛntaːliʃ],ADJ
+kozmikus,[ˈkozmikuʃ],ADJ
+mikroszkóp,[ˈmikroskoːp],NOUN
+mumpsz,[ˈmumps],NOUN
+produkció,[ˈprodukt͡sijoː],NOUN
+republikánus,[ˈrɛpublikaːnuʃ],ADJ; Noun
+terror,[ˈtɛrːor],NOUN
+turista,[ˈturiʃtɒ],NOUN
+vegetáció,[ˈvɛɡɛtaːt͡sijoː],NOUN
+zsűri,[ˈʒyːri],NOUN
+
+
+
+
+# Not in ÚESz dataset
+addiktológia,[ˈɒdːiktoloːɡijɒ],NOUN
+admittancia,[ˈɒdmitːɒnt͡sijɒ],NOUN
+agglomeráció,[ˈɒɡlomɛraːt͡sijoː],NOUN
+amerikanista,[ˈɒmɛrikɒniʃtɒ],NOUN
+amfetamin,[ˈɒɱfɛtɒmin],NOUN
+antiszeptikus,[ˈɒntisɛptikuʃ],ADJ
+asszociáció,[ˈɒsːot͡sijaːt͡sijoː],NOUN
+bakteriológia,[ˈbɒktɛrijoloːɡijɒ],NOUN
+ballisztikus,[ˈbɒlːistikuʃ],ADJ; Noun
+bankomat,[ˈbɒŋkomɒt],NOUN
+benzil,[ˈbɛnzil],NOUN
+bárium,[ˈbaːrijum],NOUN
+casco,[ˈkɒskoː],NOUN
+centroszóma,[ˈt͡sɛntrosoːmɒ],NOUN
+cianid,[ˈt͡sijɒnid],NOUN
+cionizmus,[ˈt͡sijonizmuʃ],NOUN
+deléció,[ˈdɛleːt͡sijoː],NOUN
+demagnetizáció,[ˈdɛmɒɡnɛtizaːt͡sijoː],NOUN
+demográfia,[ˈdɛmoɡraːfijɒ],NOUN
+disszimiláció,[ˈdisːimilaːt͡sijoː],NOUN
+diszkrimináció,[ˈdiskriminaːt͡sijoː],NOUN
+elektronikus,[ˈɛlɛktronikuʃ],ADJ
+endokrin,[ˈɛndokrin],ADJ
+etnográfia,[ˈɛtnoɡraːfijɒ],NOUN
+etnológia,[ˈɛtnoloːɡijɒ],NOUN
+expanzionizmus,[ˈɛkspɒnzijonizmuʃ],NOUN
+extrapoláció,[ˈɛkstrɒpolaːt͡sijoː],NOUN
+fluorit,[ˈfluorit],NOUN
+folklorisztika,[ˈfolkloristikɒ],NOUN
+folklorizmus,[ˈfolklorizmuʃ],NOUN
+folklorizáció,[ˈfolklorizaːt͡sijoː],NOUN
+fotoszintézis,[ˈfotosinteːziʃ],NOUN
+funktor,[ˈfuŋktor],NOUN
+genetikus,[ˈɡɛnɛtikuʃ],ADJ; Noun
+geocentrikus,[ˈɡɛot͡sɛntrikuʃ],ADJ
+giroszkóp,[ˈɡiroskoːp],NOUN
+globalizáció,[ˈɡlobɒlizaːt͡sijoː],NOUN
+glükóz,[ˈɡlykoːz],NOUN
+grafológia,[ˈɡrɒfoloːɡijɒ],NOUN
+gráf,[ˈɡraːf],NOUN
+halogén,[ˈhɒloɡeːn],ADJ; Noun
+hexán,[ˈhɛksaːn],NOUN
+hibridizáció,[ˈhibridizaːt͡sijoː],NOUN
+hiperbolikus,[ˈhipɛrbolikuʃ],ADJ
+huliganizmus,[ˈhuliɡɒnizmuʃ],NOUN
+identifikáció,[ˈidɛntifikaːt͡sijoː],NOUN
+illusztráció,[ˈilːustraːt͡sijoː],NOUN
+inerciális,[ˈinɛrt͡sijaːliʃ],ADJ
+infrastruktúra,[ˈiɱfrɒʃtruktuːrɒ],NOUN
+interakció,[ˈintɛrɒkt͡sijoː],NOUN
+interferon,[ˈintɛrfɛron],NOUN
+inzulin,[ˈinzulin],NOUN
+ionoszféra,[ˈijonosfeːrɒ],NOUN
+izoprén,[ˈizopreːn],NOUN
+izosztázia,[ˈizostaːzijɒ],NOUN
+kalcit,[ˈkɒlt͡sit],NOUN
+kalorimetria,[ˈkɒlorimɛtrijɒ],NOUN
+kaloriméter,[ˈkɒlorimeːtɛr],NOUN
+kamera,[ˈkɒmɛrɒ],NOUN
+karbonil,[ˈkɒrbonil],NOUN
+karburátor,[ˈkɒrburaːtor],NOUN
+katéter,[ˈkɒteːtɛr],NOUN
+klorofill,[ˈklorofilː],NOUN
+koalíció,[ˈkoɒliːt͡sijoː],NOUN
+kollaboráns,[ˈkolːɒboraːnʃ],NOUN
+kommunikáció,[ˈkomːunikaːt͡sijoː],NOUN
+kompatibilis,[ˈkompɒtibiliʃ],ADJ
+kompatibilitás,[ˈkompɒtibilitaːʃ],NOUN
+kompresszor,[ˈkomprɛsːor],NOUN
+konformista,[ˈkoɱformiʃtɒ],ADJ; Noun
+kovalens,[ˈkovɒlɛnʃ],ADJ
+kozmonauta,[ˈkozmonɒutɒ],NOUN
+kreativitás,[ˈkrɛɒtivitaːʃ],NOUN
+kromoszóma,[ˈkromosoːmɒ],NOUN
+lomográfia,[ˈlomoɡraːfijɒ],NOUN
+makró,[ˈmɒkroː],NOUN
+metodista,[ˈmɛtodiʃtɒ],ADJ; Noun
+mikroszkopikus,[ˈmikroskopikuʃ],ADJ
+mineralógia,[ˈminɛrɒloːɡijɒ],NOUN
+modernizáció,[ˈmodɛrnizaːt͡sijoː],NOUN
+morfológia,[ˈmorfoloːɡijɒ],NOUN
+mól,[ˈmoːl],NOUN
+navigáció,[ˈnɒviɡaːt͡sijoː],NOUN
+nuklein,[ˈnuklɛjin],NOUN
+perfekcionizmus,[ˈpɛrfɛkt͡sijonizmuʃ],NOUN
+piktogram,[ˈpiktoɡrɒmː],NOUN
+pneumatikus,[ˈpnɛumɒtikuʃ],ADJ
+polihisztor,[ˈpolihistor],NOUN
+pozitron,[ˈpozitron],NOUN
+pragmatizmus,[ˈprɒɡmɒtizmuʃ],NOUN
+privatizáció,[ˈprivɒtizaːt͡sijoː],NOUN
+prognosztikus,[ˈproɡnostikuʃ],ADJ
+promóció,[ˈpromoːt͡sijoː],NOUN
+pulzár,[ˈpulzaːr],NOUN
+racemizáció,[ˈrɒt͡sɛmizaːt͡sijoː],NOUN
+statikus,[ˈʃtɒtikuʃ],ADJ; Noun
+szegregáció,[ˈsɛɡrɛɡaːt͡sijoː],NOUN
+telekommunikáció,[ˈtɛlɛkomːunikaːt͡sijoː],NOUN
+transzformáció,[ˈtrɒnsformaːt͡sijoː],NOUN
+tranzisztor,[ˈtrɒnzistor],NOUN
+utópisztikus,[ˈutoːpistikuʃ],ADJ
+
+# Wanderwords and internationally circulating cultural terms
+# Already in ÚESz dataset
+dzsungel,[ˈd͡ʒuŋɡɛl],NOUN
+mokaszin,[ˈmokɒsin],NOUN
+préri,[ˈpreːri],NOUN
+# Not in ÚESz dataset
+anime,[ˈɒnimɛ],NOUN
+avokádó,[ˈɒvokaːdoː],NOUN
+bandikut,[ˈbɒndikut],NOUN
+bendzsó,[ˈbɛnd͡ʒoː],NOUN
+bungaló,[ˈbuŋɡɒloː],NOUN
+csakra,[ˈt͡ʃɒkrɒ],NOUN
+dzsiudzsicu,[ˈd͡ʒijud͡ʒit͡su],NOUN
+dzsudogi,[ˈd͡ʒudoɡi],NOUN
+dzsudoka,[ˈd͡ʒudokɒ],NOUN
+dzsúdó,[ˈd͡ʒuːdoː],NOUN
+dódzsó,[ˈdoːd͡ʒoː],NOUN
+iglu,[ˈiɡlu],NOUN
+jeti,[ˈjɛti],NOUN
+ketchup,[ˈkɛt͡ʃøp]; [ˈkɛt͡ʃɒp],NOUN
+kivi,[ˈkivi],NOUN; Adjective
+madzsong,[ˈmɒd͡ʒoŋɡ],NOUN
+mogul,[ˈmoɡul],NOUN
+pandit,[ˈpɒndit],NOUN
+papaja,[ˈpɒpɒjɒ],NOUN
+rádzsa,[ˈraːd͡ʒːɒ],NOUN
+vuvuzela,[ˈvuvuzɛlɒ],NOUN
+whisky,[ˈviski],NOUN
+
+# English loanwords adapted to Hungarian spelling
+# Already in ÚESz dataset
+blöff,[ˈbløfː],NOUN
+bridzs,[ˈbrid͡ʒː],NOUN
+bébi,[ˈbeːbi],NOUN; Adjective
+csekk,[ˈt͡ʃɛkː],NOUN
+dzsem,[ˈd͡ʒɛm],NOUN
+dzsentri,[ˈd͡ʒɛntri],NOUN
+dzsessz,[ˈd͡ʒɛsː],NOUN
+dömping,[ˈdømpiŋɡ],NOUN
+futball,[ˈfudbɒlː],NOUN
+gengszter,[ˈɡɛŋkstɛr],NOUN
+gém,[ˈɡeːm],NOUN
+gól,[ˈɡoːl],NOUN
+görl,[ˈɡørl],NOUN
+hamburger,[ˈhɒmburɡɛr],NOUN
+klikk,[ˈklikː],NOUN; Interjection
+koktél,[ˈkokteːl],NOUN
+komputer,[ˈkompjuːtɛr]; [ˈkompjutɛr]; [ˈkomputɛr],NOUN
+konténer,[ˈkonteːnɛr],NOUN
+konvoj,[ˈkoɱvoj],NOUN
+lord,[ˈlord],NOUN
+meccs,[ˈmɛt͡ʃː],NOUN
+nejlon,[ˈnɛjlon],NOUN
+panel,[ˈpɒnɛl],NOUN
+parti,[ˈpɒrti],NOUN; Adjective
+pingpong,[ˈpimpoŋɡ],NOUN
+puding,[ˈpudiŋɡ],NOUN
+pulóver,[ˈpuloːvɛr],NOUN
+póker,[ˈpoːkɛr],NOUN
+póni,[ˈpoːni],NOUN
+revolver,[ˈrɛvolvɛr],NOUN
+riporter,[ˈriportɛr],NOUN
+seriff,[ˈʃɛrif]; [ˈʃɛrifː],NOUN
+skalp,[ˈʃkɒlp],NOUN
+szendvics,[ˈsɛndvit͡ʃ],NOUN
+szmoking,[ˈsmokiŋɡ],NOUN
+sznob,[ˈsnob],NOUN
+sztrájk,[ˈstraːjk],NOUN
+tank,[ˈtɒŋk],NOUN
+teszt,[ˈtɛst],NOUN
+tröszt,[ˈtrøst],NOUN
+videó,[ˈvidɛoː],NOUN
+víkend,[ˈviːkɛnd],NOUN
+zsoké,[ˈʒokeː],NOUN
+
+
+
+# Not in ÚESz dataset
+blog,[ˈbloɡ],NOUN
+blogger,[ˈbloɡːɛr],NOUN
+blézer,[ˈbleːzɛr],NOUN
+brexit,[ˈbrɛksit]; [ˈbrɛɡzit],NOUN
+bróker,[ˈbroːkɛr],NOUN
+buki,[ˈbuki],NOUN
+bébiszitter,[ˈbeːbisitːɛr],NOUN
+csip,[ˈt͡ʃip],NOUN
+csipsz,[ˈt͡ʃips],NOUN
+kodon,[ˈkodon],NOUN
+kód,[ˈkoːd],NOUN
+leg,[ˈlɛɡ],NOUN
+lignin,[ˈliɡnin],NOUN
+maltóz,[ˈmɒltoːz],NOUN
+parszek,[ˈpɒrsɛk],NOUN
+pixel,[ˈpiksɛl],NOUN
+dizájn,[ˈdizaːjn],NOUN
+dzseki,[ˈd͡ʒɛki],NOUN
+dzsip,[ˈd͡ʒip]; [ˈd͡ʒipː],NOUN
+dzsogging,[ˈd͡ʒoɡːiŋɡ],NOUN
+dzsóker,[ˈd͡ʒoːkɛr],NOUN
+dzsömper,[ˈd͡ʒømpɛr],NOUN
+dzsörzé,[ˈd͡ʒørzeː],NOUN
+dzsúsz,[ˈd͡ʒuːs],NOUN
+flex,[ˈflɛks],NOUN
+flexel,[ˈflɛksɛl],VERB
+gallon,[ˈɡɒlːon],NOUN
+hardver,[ˈhɒrdvɛr],NOUN
+hifi,[ˈhifi],NOUN
+hobbit,[ˈhobːit],NOUN
+internet,[ˈintɛrnɛt],NOUN
+kernel,[ˈkɛrnɛl],NOUN
+kevlár,[ˈkɛvlaːr],NOUN
+klip,[ˈklip]; [ˈklipː],NOUN
+komment,[ˈkomːɛnt],NOUN
+konverter,[ˈkoɱvɛrtɛr],NOUN
+krikett,[ˈkrikɛtː],NOUN
+kultfilm,[ˈkultfilm],NOUN
+laptop,[ˈlɒptop]; [ˈlɛptop],NOUN
+lobbi,[ˈlobːi],NOUN
+lájkol,[ˈlaːjkol],VERB
+mani,[ˈmɒni],NOUN
+marketing,[ˈmɒrkɛtiŋɡ],NOUN
+mazsorett,[ˈmɒʒorɛtː],NOUN
+menedzser,[ˈmɛnɛd͡ʒːɛr],NOUN
+menedzsment,[ˈmɛnɛd͡ʒmɛnt],NOUN
+meta,[ˈmɛtɒ],ADJ
+mikromenedzsment,[ˈmikromɛnɛd͡ʒmɛnt],NOUN
+modem,[ˈmodɛm],NOUN
+mulcs,[ˈmult͡ʃ],NOUN
+nonprofit,[ˈnomprofit],ADJ
+nonstop,[ˈnonʃtop],ADJ;ADV;NOUN
+nonszensz,[ˈnonsɛns],NOUN
+ofszet,[ˈofsɛt],NOUN
+poszter,[ˈpostɛr],NOUN
+producer,[ˈprodut͡sɛr],NOUN
+random,[ˈrɒndom],ADJ
+spániel,[ˈʃpaːnijɛl],NOUN
+szelf,[ˈsɛlf],NOUN
+szerver,[ˈsɛrvɛr],NOUN
+szett,[ˈsɛtː],NOUN
+szexepil,[ˈsɛksɛpil],NOUN
+szkenner,[ˈskɛnːɛr],NOUN
+szkinhed,[ˈskinɦɛd],NOUN
+szleng,[ˈslɛŋɡ],NOUN
+szlogen,[ˈsloɡɛn],NOUN
+szoftver,[ˈsoftvɛr],NOUN
+sztenderd,[ˈstɛndɛrd],ADJ
+terminál,[ˈtɛrminaːl],NOUN
+tinédzser,[ˈtineːd͡ʒɛr],NOUN
+trendi,[ˈtrɛndi],ADJ
+emotikon,[ˈɛmotikon],NOUN
+bojler,[ˈbojlɛr],NOUN
+buldózer,[ˈbuldoːzɛr],NOUN
+eszkaláció,[ˈɛskɒlaːt͡sijoː],NOUN
+troll,[ˈtrolː],NOUN
+
+# Morphemes and affixes
+# Not in ÚESz dataset
+-er,[ɛr],Suffix
